@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ntag424-pcsc"
+version = "0.1.0"
+description = "Program NXP NTAG 424 DNA (SUN/SDM, AES keys) and NTAG 213/215/216 with any USB PC/SC reader (ACR1252U) - pure Python"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Modelos Inteligencia Artificial S.L."}]
+requires-python = ">=3.8"
+dependencies = ["cryptography", "pyscard"]
+keywords = ["nfc", "ntag424", "ntag 424 dna", "sun", "sdm", "ntag215", "pcsc", "acr1252u"]
+classifiers = ["License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Topic :: Security :: Cryptography"]
+
+[project.urls]
+Homepage = "https://github.com/lucia-malickova/ntag424-pcsc"
+
+[tool.setuptools]
+packages = ["ntag424_pcsc"]
